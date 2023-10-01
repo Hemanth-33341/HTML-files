@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head> </head>
+
+<body>
+    <span id='num-1'></span>
+    <span id='num-2'></span>
+    <br>
+    <div><button onclick="add()">ADD</button>
+        <button onclick="subtract()">SUBTRACT</button>
+    </div><br>
+    <button onclick="multiply()">MULTIPLY</button>
+    <button onclick="division">DIVISION</button>
+    <br>
+    <br>
+    <span id="sum-el">sum:<br> <br></span>
+    
+    
+<script>
+console.log("hai")
+
+let x = 10
+let y = 200
+document.getElementById("num-1").innerText = x
+document.getElementById("num-2").innerText = y
+ans = document.getElementById("sum-el")
+
+
+function add() {
+    ans.innerText = x + y
+}
+
+function subtract() {
+    ans.innerText = x - y
+}
+
+function multiply() {
+    ans.innerText = x * y
+}
+
+function division() {
+    ans.innerText = x / y
+}
+        </script>
+
+</body>
+
+</html>
